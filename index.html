@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timodoro</title>
+    <link rel="shortcut icon" href="tomato.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <audio>
+      <source src="alarm.mov" type="audio/mp3" />
+    </audio>
+
+    <div class="container">
+      <h1>Timodoro</h1>
+      <h2>
+        Timodoro is a website that allows you to work using Pomodoro's method.
+        The method is really simple: work 25 minutes, rest 5 minutes. Timodoro
+        will automatically control this workflow by setting alarms.
+      </h2>
+
+      <div class="content">
+        <div class="paragraph">
+          <p>Click the tomato and start working.</p>
+          <p>
+            Don't worry about looking how much until rest time, we will alert
+            you :)
+          </p>
+          <p>
+            (Just remind to keep your volume up!)
+          </p>
+        </div>
+        <div class="tomato">
+          <img src="./tomato.png" alt="Tomato timer" srcset="" />
+        </div>
+        <div class="paragraph">
+          <p class="phrase-remaining">Remaining work time:</p>
+          <p><span class="time-remaining">25min 00s</span></p>
+        </div>
+      </div>
+
+      <!-- <div class="ad">AD</div> -->
+    </div>
+  </body>
+</html>

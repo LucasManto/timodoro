@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  color: #960000;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 3.2rem 6.4rem 0;
+  background: #ffaeae;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h1,
+.container h2 {
+  margin-bottom: 3.2rem;
+}
+
+.content {
+  width: 100%;
+  align-self: center;
+  margin: 1.6rem;
+
+  display: flex;
+}
+
+.tomato {
+  width: 40rem;
+  height: 40rem;
+  margin: 0 2.4rem;
+  cursor: pointer;
+}
+
+.tomato img {
+  width: 100%;
+  height: 100%;
+  transition: 0.2s;
+  margin-bottom: 3.2rem;
+}
+
+.tomato img:hover {
+  opacity: 0.9;
+}
+
+.tomato img:active {
+  transform: scale(1.1);
+}
+
+.paragraph {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.paragraph p {
+  text-align: center;
+  margin-bottom: 3.2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.paragraph p span {
+  font-size: 4.8rem;
+}
+
+.ad {
+  width: 80%;
+  height: 8rem;
+  margin-top: auto;
+}
+
+@media (max-width: 900px) {
+  .paragraph p {
+    font-size: 1.8rem;
+  }
+
+  .paragraph p span {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .container h2 {
+    margin-bottom: 1.6rem;
+  }
+
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .paragraph p {
+    margin-bottom: 0;
+  }
+
+  .tomato {
+    margin: 2.4rem 0;
+  }
+}
